@@ -1,0 +1,144 @@
+:root {
+  --bg-color: hsl(208, 44%, 59%);
+  --btn-color: hsl(208, 41%, 82%);
+  --txt-btn-color: hsl(213, 38%, 19%);
+  --font-style: "Poppins", sans-serif;
+  --font-weight: 400,500;
+  --border-colors: grey;
+}
+h1{
+  position: sticky;
+  margin: 0px;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+body {
+  margin: auto;
+  padding: 0px;
+  background-color: var(--bg-color);
+}
+.container {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  background-color: var(--bg-color);
+  padding: 0px;
+}
+.box-container{
+  margin: 20px 20px;
+  width: 30%;
+  padding: 10px 10px;
+  background-color: var(--btn-color);
+  position: relative;
+  top: 200px;
+  bottom: 100px;
+  left: 640px;
+  right: 200px;
+}
+#myModal {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+button{
+  width: 25%;
+  color: white;
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  background-color: var(--txt-btn-color);
+}
+#myBtn{
+  margin: 25%;
+  width: 25%;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  background-color: var(--txt-btn-color);
+}
+.click-btn{
+  margin: auto;
+  width: 100%;
+  padding: 20px 20px;
+}
+.popup {
+  width: 45%;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 10px;
+  position: relative;
+  top: 290px;
+  bottom: 100px;
+  left: 550px;
+  right: 200px;
+}
+input[type="text"] {
+  width: 80%;
+  padding: 20px 20px;
+  border-radius: 2px solid var(--border-colors);
+}
+.input1{
+  padding: 20px 20px;
+}
+.input2{
+  padding: 10px 20px;
+}
+textarea {
+  width: 80%;
+  padding: 15px 15px;
+  box-sizing: none;
+  border-radius: 1px solid var(--border-colors);
+}
+.message{
+  padding: 20px 20px;
+}
+.btn{
+  width: 25%;
+  padding: 20px 20px;
+}
+.close{
+  width: 30%;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  color: var(--border-colors);
+  background-color: transparent;
+  position: relative;
+  left: 390px;
+  bottom: -20px;
+}
+label{
+  position: absolute;
+  top :40px;
+  left: 90px;
+}
+.popup>div {
+  position: relative;
+}
+input:focus + label{
+  position: relative;
+  top: -40px;
+  left: -680px;
+}
+textarea:focus + label{
+  position: relative;
+  top: -80px;
+  left: -670px;
+}
+.input1 input:hover{
+  cursor: pointer;
+  border-color: 1px solid grey;
+}
+.input2 input:hover{
+  cursor: pointer;
+  border-color: 1px solid grey;
+}
+textarea :hover{
+  cursor: pointer;
+  border-color: 1px solid grey;
+}

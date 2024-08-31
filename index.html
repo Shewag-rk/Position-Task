@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Task</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Container Div-->
+  <div class="container">
+      <h1>Contact Us</h1>
+   
+    <!-- Button Div-->
+    <div class="box-container">
+        <button id="myBtn" type="button">CLICK HERE</button>
+    </div>
+
+    <!-- Forms Div-->
+      <div  id="myModal">
+        <form class="popup">
+
+          <button class="close">X</button>
+
+          <div class="input1">
+            <input type="text" id="fname" name="fname"/>
+            <label for="fname">First name</label>
+           </div> 
+
+          <div class="input2">
+            <input type="text" id="Email" name="Email"/>
+            <label for="Email">Email</label>
+          </div>
+
+          <div class="message">
+            <textarea></textarea>
+            <label type="Message" for="Message">Message</label> 
+          </div>
+
+          <div class="btn-send">
+          <button class="btn">Send</button>
+          </div>
+        </form>
+      </div>
+  </div>
+    <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
